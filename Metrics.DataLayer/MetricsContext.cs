@@ -7,6 +7,9 @@ namespace Metrics.DataLayer
     {
         public DbSet<User> Users { get; set; }
 
-        public MetricsContext(DbContextOptions<MetricsContext> options) :base(options) { }
+        public MetricsContext(DbContextOptions<MetricsContext> options) : base(options)
+        {
+            this.Database.EnsureCreated();
+        }
     }
 }

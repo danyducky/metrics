@@ -46,7 +46,7 @@ namespace Startup
             app.UseSwagger();
             app.UseSwaggerUI();
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseSpaStaticFiles();
             app.UseRouting();

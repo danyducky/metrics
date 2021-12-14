@@ -1,0 +1,80 @@
+﻿@import "./shared.module";
+
+.nav {
+  position: relative;
+  
+  height: $navbar_height;
+  
+  display: flex;
+
+  background: #F9F9F9;
+  
+  box-shadow: 4px 0 10px rgba(93, 109, 151, 0.1);
+
+  justify-content: space-between;
+  
+  z-index: 15;
+  
+  .nav__element {
+    display: flex;
+    
+    margin: auto 1.4375rem;
+    
+    &_vertical-middle {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    &_search {
+      width: 320px;
+      height: 28px;
+
+      background-color: white !important;
+      
+      border-radius: 20px;
+      padding-left: 2.5rem;
+      
+      outline: none;
+      filter: none;
+      border: none;
+      
+      @media (max-width: 800px) {
+        width: 220px;
+      }
+      
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+    
+    &_search-icon {
+      background: url("../imgs/Search.png") no-repeat 1rem 5px;
+    }
+    
+    &_logo-icon {
+      width: 40px;
+      height: 40px;
+      
+      margin-right: 32px;
+    }
+    
+    &_exit-icon {
+      width: 18px;
+      height: 18px;
+      
+      margin: auto;
+      margin-right: 20px;
+    }
+    
+  }
+}
+
+.roboto-font_mod {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  
+  text-transform: uppercase;
+
+  color: #5D6E97;
+}

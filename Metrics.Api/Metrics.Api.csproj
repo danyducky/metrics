@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Metrics.Api</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Metrics.DataLayer\Metrics.DataLayer.csproj" />
+    <ProjectReference Include="..\Startup\Startup.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="client-app\package-lock.json" />
+    <_ContentIncludedByDefault Remove="client-app\package.json" />
+    <_ContentIncludedByDefault Remove="client-app\public\manifest.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="client-app\src\components\Content.tsx" />
+    <TypeScriptCompile Include="client-app\src\components\Navbar.tsx" />
+    <TypeScriptCompile Include="client-app\src\components\Sidebar.tsx" />
+    <TypeScriptCompile Include="client-app\src\models\IUser.ts" />
+  </ItemGroup>
+
+
+</Project>

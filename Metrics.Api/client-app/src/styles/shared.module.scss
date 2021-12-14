@@ -1,0 +1,7 @@
+﻿$navbar_height: 3.625rem;
+$sidebar_height: calc(100% - #{$navbar_height});
+
+.wrapper {
+  display: flex;
+  min-height: $sidebar_height;
+}
